@@ -30,7 +30,7 @@ p, .link{
 
 
 /* 2688x1242px at 458ppi */
-@media only screen 
+/*@media only screen 
     and (device-width: 414px) 
     and (device-height: 896px) 
     and (-webkit-device-pixel-ratio: 3) { 
@@ -52,9 +52,13 @@ p, .link{
       #video{
         width: 100%;
       }
-    }
+    }*/
 
-/*@media only screen and (max-width: 576px) {
+@media only screen 
+    and (max-width: 576px)    
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3){
   #dateGreet{
     width: 100%;
   }
