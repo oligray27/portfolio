@@ -1,0 +1,48 @@
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding-right: 15px;
+}
+
+.link {
+  position: relative;
+  transition: clip-path 275ms ease;
+}
+.link:hover span::before, .link:focus span::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.link span {
+  position: relative;
+  display: inline-block;
+  color: #000000;
+}
+.link span::before {
+  position: absolute;
+  content: attr(data-content);
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #000000;
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 275ms ease;
+}
+
+span.dotted::before {
+  text-decoration-style: dotted;
+}
+
+span.dashed::before {
+  text-decoration-style: dashed;
+}
+
+span.double::before {
+  text-decoration-style: double;
+}
+
+span.wavy::before {
+  text-decoration-style: wavy;
+}
+
+span.line-through::before {
+  text-decoration-line: line-through;
+}
