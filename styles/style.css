@@ -19,6 +19,11 @@
   width: 25%;
 }
 
+
+#t{
+  width: 35%;
+}
+
 p, .link{
   font-size: x-large;
 }
@@ -36,6 +41,10 @@ p, .link{
   }
   #githubLink{
     width: 50%;
+  }
+
+  #t{
+    width: 100%;
   }
   
   #video{
