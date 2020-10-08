@@ -46,7 +46,7 @@ p, .link{
       }
     
       #t{
-        width: 100vw;
+        width: 100%;
       }
       
       #video{
@@ -74,4 +74,4 @@ p, .link{
     width: 100%;
   }
 
-} */
+} 
