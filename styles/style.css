@@ -29,9 +29,32 @@ p, .link{
 }
 
 
+/* 2688x1242px at 458ppi */
+@media only screen 
+    and (device-width: 414px) 
+    and (device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+      #dateGreet{
+        width: 100%;
+      }
+      #pfp{
+        zoom: 0.03;
+        display: none;
+      }
+      #githubLink{
+        width: 50%;
+      }
+    
+      #t{
+        width: 100%;
+      }
+      
+      #video{
+        width: 100%;
+      }
+    }
 
-
-@media only screen and (max-width: 576px) {
+/*@media only screen and (max-width: 576px) {
   #dateGreet{
     width: 100%;
   }
@@ -51,4 +74,4 @@ p, .link{
     width: 100%;
   }
 
-} 
+} */
