@@ -11,6 +11,10 @@
   width: 75%;
 }
 
+#video{
+  width: 50%;
+}
+
 #githubLink{
   width: 25%;
 }
@@ -34,4 +38,8 @@ p, .link{
     width: 50%;
   }
   
+  #video{
+    width: 100%;
+  }
+
 } 
