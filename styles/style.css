@@ -55,11 +55,8 @@ p, .link{
     }*/
 
 @media only screen 
-    and (max-width: 576px)    
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 3){
-  #dateGreet{
+    and (max-width: 576px)    {
+    #dateGreet{
     width: 100%;
   }
   #pfp{
@@ -77,5 +74,5 @@ p, .link{
   #video{
     width: 100%;
   }
+    }
 
-} 
