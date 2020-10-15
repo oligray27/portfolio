@@ -30,8 +30,8 @@ $(document).ready(function () {
         document.getElementById("grandTotal").innerHTML = getArraySum(array).toFixed(2);
 
         var row = '<tr onclick="myFunction(this)">' +
-            '<td>' + hours + '</td>' +
             '<td>' + shifts + '</td>' +
+            '<td>' + hours + '</td>' +
             '<td>' + "£ " + rate + '</td>' +
             '<td><a class="delete" title="Delete"><i class="material-icons">&#xE872;</i></a></td>' +
             '</tr>';
