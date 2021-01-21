@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://unpkg.com/moment"></script>
+
+    <script src="https://kit.fontawesome.com/259b42d785.js" crossorigin="anonymous"></script>
+
+    <title>Hi!</title>
+</head>
+
+<body onload="welcome()">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+        <i class="d-inline fas fa-robot fa-lg" style="margin-right: 10px; width: 30; height: 30;"></i>
+        <a class="navbar-brand" href="#"><strong>RoboReplace</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-success my-2 my-sm-0" type="submit">Login</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="d-flex">
+        <div class="container" id="hero">
+            <h1 class="display-4">Welcome!</h1>
+            <p class="lead">Have you ever wished you had a second version of yourself to cover for you on sick days
+                or
+                take a test you're not prepared for? Now you can with RoboReplace. We can provide a 100% convincing
+                droid that is capable of full impersonation and is able to complete a plethora of tasks in any work
+                or
+                study environment.</p>
+            <hr class="my-4">
+            <p>
+                <a class="btn btn-primary btn-lrg" href="#" role="button">Book a droid today!</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!-- <div class="h-100 row align-items-center">
+            <div class="col" style="background:red">
+                <div class="jumbotron">
+                    <h1 class="display-4">Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <hr class="my-4">
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                    <p class="lead">
+                      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    </p>
+                  </div>
+            </div>
+          </div> -->
+
+    <div class="footer fixed-bottom">
+        <span class="h5">Follow us on Social Media</span>
+
+        <div style="width: 400px; ">
+            <div class="row">
+                <div class="col-">
+                    <i class="fab fa-facebook-f fa-lg" onclick="window.open(
+                            'https://facebook.com', '_blank');"></i>
+                </div>
+                <div class="col-">
+                    <i class="fab fa-instagram fa-lg" onclick="window.open(
+                            'https://instagram.com', '_blank');"></i>
+                </div>
+                <div class="col-">
+                    <i class="fab fa-twitter fa-lg" onclick="window.open(
+                            'https://twitter.com', '_blank');"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span class="text-muted" style="font-size: 0.7rem;">Copyright © 2021 RoboReplace</span> <br>
+                </div>
+                <div class="col">
+                        <a id="disclaimer" style="font-size: 0.7rem; margin-bottom: 0px; color: #6c757d;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Disclaimer
+                        </a>
+                        <div class="dropdown-menu">
+                            <span class="text-muted" style="font-size: 0.7rem; margin-bottom: 0px;">RoboReplace is a fictitious brand created
+                                solely for the purpose of the assessment
+                                of IN1010 at City, University of London, UK. All products and people associated with RoboReplace are
+                                also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information
+                                provided about the product is also fictitious and should not be constructed to be representative of
+                                actual products on the market in a similar product category. </span>
+                          </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
