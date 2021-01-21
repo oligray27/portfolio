@@ -1,6 +1,6 @@
 body {
   background-image: url(/images/bg.jpg);
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-color: #e9ecef;
   height: 100%;
 }
