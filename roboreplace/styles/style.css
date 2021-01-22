@@ -2,9 +2,15 @@
   font-family: 'Arvo', serif;
 }
 
-body,html {
-  background-color: #e9ecef;
+html{
   height: 100%;
+}
+
+#hero-img{
+  background-image: url(/images/bg.jpg); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
 }
 
 #nav-logo{
@@ -47,6 +53,9 @@ body,html {
   background-color: #e9ecef;
   border-radius: 20px;
 }
+.text-muted{
+  font-size: 0.7rem;
+}
 
 .navbar {
   z-index: 99999;
@@ -61,7 +70,8 @@ body,html {
 }
 
 .footer {
-  padding: .5rem 1rem;
+
+  padding: .7rem 1rem;
   background-color: #e9ecef;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
