@@ -4,7 +4,7 @@
 }
 
 body {
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-color: #e9ecef;
   height: 100%;
 }
