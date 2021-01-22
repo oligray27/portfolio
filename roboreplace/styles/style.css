@@ -1,21 +1,17 @@
 *{
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Arvo', serif;
 }
 
-body {
+body,html {
   background-color: #e9ecef;
-  height: 100%;
-}
-
-html {
   height: 100%;
 }
 
 #nav-logo{
   animation: spin ease 1.5s;
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards; 
+  margin-right: 10px; 
+  width: 30; 
+  height: 30;
 }
 
 @keyframes spin { 
@@ -36,6 +32,13 @@ html {
   background-color: #183153;
 }
 
+#disclaimer {
+  text-decoration: underline !important;
+  font-size: 0.7rem; 
+  margin-bottom: 0px; 
+  color: #6c757d;
+}
+
 #hero {
   margin-top: 180px;
   margin-bottom: 100px;
@@ -46,7 +49,6 @@ html {
 }
 
 .navbar {
-  overflow: hidden;
   z-index: 99999;
   background-color: #e9ecef;
   border-bottom-left-radius: 20px;
@@ -54,7 +56,6 @@ html {
 }
 
 .dropdown-menu {
-
   padding: .5rem 1rem !important;
   width: 300px !important;
 }
@@ -64,6 +65,10 @@ html {
   background-color: #e9ecef;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.fa-lg {
+  padding: .5rem 1rem;
 }
 
 .fa-twitter:hover {
@@ -81,19 +86,9 @@ html {
   color: #E1306C;
 }
 
-
-#disclaimer {
-  text-decoration: underline !important;
-
-}
-
 #disclaimer:hover {
   color: black !important;
   transition-duration: 250ms !important;
-}
-
-.fa-lg {
-  padding: .5rem 1rem;
 }
 
 @media (max-width: 576px) {
