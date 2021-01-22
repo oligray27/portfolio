@@ -1,5 +1,9 @@
+*{
+  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Arvo', serif;
+}
+
 body {
-  background-image: url(/images/bg.jpg);
   background-attachment: scroll;
   background-color: #e9ecef;
   height: 100%;
@@ -7,6 +11,30 @@ body {
 
 html {
   height: 100%;
+}
+
+#nav-logo{
+  animation: spin ease 1.5s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+}
+
+@keyframes spin { 
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
+} 
+
+.badge {
+  background-color: #183153;
+}
+
+#login-btn {
+  border-radius: 20px;
+  background-color: #183153;
+}
+
+#book-btn{
+  background-color: #183153;
 }
 
 #hero {
@@ -55,7 +83,7 @@ html {
 }
 
 
-#disclaimer{
+#disclaimer {
   text-decoration: underline !important;
 
 }
@@ -71,6 +99,6 @@ html {
 
 @media (max-width: 576px) {
   #hero {
-    margin-top: 80px;
+    margin-bottom: 118px;
   }
 }
