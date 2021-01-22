@@ -45,9 +45,19 @@ html{
   color: #6c757d;
 }
 
+.active-link{
+  color: black;
+  text-decoration: underline;
+  font-size: 0.7rem; 
+}
+
+#link {
+  text-decoration: none !important;
+  font-size: 0.7rem; 
+}
+
 #hero {
-  margin-top: 180px;
-  margin-bottom: 100px;
+  height: fit-content;
   width: 95%;
   padding: .5rem 1rem;
   background-color: #e9ecef;
@@ -69,8 +79,13 @@ html{
   width: 300px !important;
 }
 
-.footer {
+.content{
+  min-height: calc(100vh - 102px);
+  
+}
 
+
+.footer {
   padding: .7rem 1rem;
   background-color: #e9ecef;
   border-top-left-radius: 20px;
@@ -101,9 +116,14 @@ html{
   transition-duration: 250ms !important;
 }
 
+#disclaimer:hover {
+  color: black !important;
+  transition-duration: 250ms !important;
+}
+
 @media (max-width: 576px) {
   #hero {
-    margin-bottom: 118px;
+    margin-bottom: 22px;
   }
 
 }
