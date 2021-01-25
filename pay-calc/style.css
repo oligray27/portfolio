@@ -1,20 +1,4 @@
-.container-fluid{
-    padding: 15px;
-    margin-top: 25px;
-    width: 95%;
-    line-height: 38px; vertical-align:middle; 
-    background-color: white;
-}
-
-p{
-    font-size: large;
-}
-
-.form-control, .form-control:focus{
-    border: border-dark;
- }
-
- .table-wrapper {
+.table-wrapper {
     margin: 30px auto;
     background: #fff;
     padding: 20px;	
@@ -79,8 +63,3 @@ table.table td .add {
     display: none;
 }
 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 800px) {
-    #form {padding-bottom: 5px;}
-  }

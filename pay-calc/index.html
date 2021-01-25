@@ -15,56 +15,71 @@
 
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="/styles/style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="/pay-calc/script.js"></script>
 
     <script src="bootstrap-input-spinner.js"></script>
-
-
 
     <title>Hi!</title>
 </head>
 
 <body>
-    <!-- As a heading -->
     <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">Pay Calculator | <a class="navbar-brand " style="text-decoration: underline;" href="/projects.html">Back to projects</a></span>
+        <span class="navbar-brand mb-0 h1">Pay Calculator | <a class="navbar-brand " style="text-decoration: underline;"
+                href="/projects.html">Back to projects</a></span>
     </nav>
 
     <div class="container text-light content">
-        <div style="margin-bottom: 10px;">
-            <p style="display: inline;">Current Rate:</p>
-
-            <div style="width: 200px; float: right;">
-                <input id="rate" style="width: 50px;" type="number" data-prefix="£" value="9.424" data-decimals="3"
-                    min="0" step="0.01" />
+        <div class="row">
+            <div id="label" class="col-sm">
+                <span>Current Rate:</span>
+            </div>
+            <div id="label" class="col-sm-auto picker">
+                <input id="rate" type="number" data-prefix="£" value="9.424" data-decimals="3" min="0" step="0.01" />
             </div>
         </div>
 
-        <div style="width: 100%; margin-top: 15px; margin-bottom: 15px;" class="border-top border-dark"></div>
+        <hr class="bg-light">
 
-        <div style="width: 100%;">
-            <p style="display: inline;">Premium rate?</p>
-
-            <button type="button" id="check" style="margin-left: 10px; float:right; width: 100px; background-color: #e23e57;" class="btn text-light" data-toggle="button"
-                aria-pressed="false" onclick="">
-                Disabled
-            </button>
+        <div class="row">
+            <div id="label" class="col-sm">
+                <span>Premium rate?</span>
+            </div>
+            <div class="col-sm-auto">
+                <button type="button" id="check" style="background-color: #e23e57;" class="btn text-light"
+                    data-toggle="button" aria-pressed="false" onclick="">
+                    Disabled
+                </button>
+            </div>
         </div>
     </div>
 
     <div class="container text-light content">
-        <p style="display: inline;">Length of shifts</p>
-        <div style="width: 200px; float: right;">
-            <input id="hours" style="width: 50px;" type="number" data-suffix="hrs" value="5" data-decimals="2" min="0" max="12"
-                step="0.25" />
+        <div class="row">
+            <div id="label" class="col-sm">
+                <span>Length of shifts:</span>
+            </div>
+            <div class="col-sm-auto picker">
+                <input id="hours" type="number" data-suffix="hrs" value="5" data-decimals="2" min="0" max="12"
+                    step="0.25" />
+            </div>
         </div>
-        <div style="width: 100%; margin-top: 15px; margin-bottom: 15px;" class="border-top border-dark"></div>
-        <p style="display: inline;">Number of shifts</p>
-        <div style="width: 200px; float: right;">
-            <input id="length" style="width: 50px;" type="number" value="5" />
+        <hr class="bg-light">
+        <div class="row">
+            <div id="label" class="col-sm">
+                <span>Number of shifts</span>
+            </div>
+            <div class="col-sm-auto picker">
+                <input id="length" type="number" value="5" />
+            </div>
         </div>
-        <div style="width: 100%; margin-top: 15px; margin-bottom: 15px; " class="border-top border-dark"></div>
-        <button style="background-color: #e23e57;" class="btn add-new text-light">Add</button>
+        <hr class="bg-light">
+        <div class="row">
+            <div class="col">
+                <button style="background-color: #e23e57;" class="btn add-new text-light">Add</button>
+            </div>
+        </div>
     </div>
 
     <div class="container text-light content">
@@ -72,25 +87,26 @@
         <p id="grandTotal" style="display: inline; vertical-align: middle; font-weight: bold;">0</p>
     </div>
 
-    <div style="margin-bottom: 100px; padding-bottom: 15px!important;" class="table-responsive container text-light content">
-            <table id="table" class="table table-bordered text-light">
-                <thead>
-                    <tr>
-                        <th>Shift(s)</th>
-                        <th>Hours</th>
-                        <th>Rate</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+    <div style="margin-bottom: 100px; padding-bottom: 15px!important;"
+        class="table-responsive container text-light content">
+        <table id="table" class="table table-bordered text-light">
+            <thead>
+                <tr>
+                    <th>Shift(s)</th>
+                    <th>Hours</th>
+                    <th>Rate</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
 
     <script>
         $("input[type='number']").inputSpinner()
     </script>
-    
+
 </body>
 
 </html>

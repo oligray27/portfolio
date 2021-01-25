@@ -33,7 +33,7 @@ $(document).ready(function () {
             '<td>' + shifts + '</td>' +
             '<td>' + hours + '</td>' +
             '<td>' + "£ " + rate + '</td>' +
-            '<td><a class="delete" title="Delete"><i class="material-icons">&#xE872;</i></a></td>' +
+            '<td class="delete"><i class="material-icons"">&#xE872;</i></td>' +
             '</tr>';
         $("table").append(row);
     });
