@@ -30,8 +30,6 @@
                 href="/projects.html">Back to projects</a></span>
     </nav>
 
-
-
     <div class="container text-light content">
         <div class="row">
             <div id="label" class="col-sm">
@@ -39,10 +37,10 @@
             </div>
             <div id="label" class="col-sm-auto picker">
                 <input id="rate" type="number" data-prefix="£" value="10" data-decimals="3" min="0" step="0.01" />
-
             </div>
+
             <div id="label" class="col-sm-auto">
-                <button type="button" id="check" style="background-color: #e23e57;" class="btn text-light"
+                <button type="button"  style="background-color: #e23e57;" class="btn text-light"
                     data-toggle="button" aria-pressed="false" onclick="removeCookies()">
                     Reset Rate
                 </button>
@@ -117,6 +115,7 @@
 
         $(document).ready(function () {
             $("#rate").val(getCookie("rate"))
+
         })
     </script>
 
