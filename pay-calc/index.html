@@ -13,7 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/styles/style.css">
     <script src="script.js"></script>
 
     <script src="bootstrap-input-spinner.js"></script>
@@ -23,13 +24,13 @@
     <title>Hi!</title>
 </head>
 
-<body style="background-color: #343a40;" >
+<body>
     <!-- As a heading -->
-    <nav class="navbar navbar-dark bg-dark border-bottom">
-        <span class="navbar-brand mb-0 h1">Pay Calculator</span>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Pay Calculator | <a class="navbar-brand " style="text-decoration: underline;" href="/projects.html">Back to projects</a></span>
     </nav>
 
-    <div class="container-fluid border border-dark rounded">
+    <div class="container text-light content">
         <div style="margin-bottom: 10px;">
             <p style="display: inline;">Current Rate:</p>
 
@@ -44,14 +45,14 @@
         <div style="width: 100%;">
             <p style="display: inline;">Premium rate?</p>
 
-            <button type="button" id="check" style="margin-left: 10px; float:right; width: 100px;" class="btn btn-dark" data-toggle="button"
+            <button type="button" id="check" style="margin-left: 10px; float:right; width: 100px; background-color: #e23e57;" class="btn text-light" data-toggle="button"
                 aria-pressed="false" onclick="">
                 Disabled
             </button>
         </div>
     </div>
 
-    <div class="container-fluid border border-dark rounded">
+    <div class="container text-light content">
         <p style="display: inline;">Length of shifts</p>
         <div style="width: 200px; float: right;">
             <input id="hours" style="width: 50px;" type="number" data-suffix="hrs" value="5" data-decimals="2" min="0" max="12"
@@ -62,18 +63,17 @@
         <div style="width: 200px; float: right;">
             <input id="length" style="width: 50px;" type="number" value="5" />
         </div>
-        <div style="width: 100%; margin-top: 15px; margin-bottom: 15px;" class="border-top border-dark"></div>
-        <button class="btn btn-success add-new">Add</button>
+        <div style="width: 100%; margin-top: 15px; margin-bottom: 15px; " class="border-top border-dark"></div>
+        <button style="background-color: #e23e57;" class="btn add-new text-light">Add</button>
     </div>
 
-    <div class="container-fluid border border-dark rounded">
+    <div class="container text-light content">
         <p style="display: inline; vertical-align: middle;">Grand Total £: </p>
         <p id="grandTotal" style="display: inline; vertical-align: middle; font-weight: bold;">0</p>
     </div>
 
-    <div style="margin-bottom: 100px;" class="table-responsive">
-        <div class="container-fluid border border-dark rounded">
-            <table id="table" class="table table-bordered">
+    <div style="margin-bottom: 100px; padding-bottom: 15px!important;" class="table-responsive container text-light content">
+            <table id="table" class="table table-bordered text-light">
                 <thead>
                     <tr>
                         <th>Shift(s)</th>
@@ -85,7 +85,6 @@
                 <tbody>
                 </tbody>
             </table>
-        </div>
     </div>
 
     <script>

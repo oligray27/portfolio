@@ -3,14 +3,20 @@
   padding: 10px;
 }
 
-#pfp {
-  zoom: 0.35;
-  display: none;
-
-}
-
 body {
   background-color: #262626;
+}
+
+.btn{
+  border-radius: 20px;
+  border-color: #ced4da;
+  border: 1px solid;
+}
+
+.btn-decrement, .btn-increment{
+  background-color: #e23e57;
+  color: #f8f9fa;
+  border-color: #ced4da;
 }
 
 #dateGreet {
