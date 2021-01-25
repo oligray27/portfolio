@@ -1,6 +1,6 @@
 a {
   text-decoration: none;
-  color: black;
+  color: #f8f9fa;
   cursor: pointer;
   padding-right: 15px;
 }
@@ -15,14 +15,14 @@ a {
 .link span {
   position: relative;
   display: inline-block;
-  color: #000000;
+  color: #f8f9fa;
 }
 .link span::before {
   position: absolute;
   content: attr(data-content);
-  color: #000000;
+  color: #f8f9fa;
   text-decoration: underline;
-  text-decoration-color: #000000;
+  text-decoration-color: #f8f9fa;
   clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
   transition: clip-path 275ms ease;
 }

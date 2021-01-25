@@ -1,31 +1,62 @@
 .center {
-    margin: auto;
-    padding: 10px;
-  }
-
-#pfp{
-  zoom: 0.35;
+  margin: auto;
+  padding: 10px;
 }
 
-#dateGreet{
+#pfp {
+  zoom: 0.35;
+  display: none;
+
+}
+
+body {
+  background-color: #262626;
+}
+
+#dateGreet {
   width: 75%;
 }
 
-#video{
+#video {
   width: 50%;
 }
 
-#githubLink{
+#githubLink {
   width: 25%;
 }
 
-
-#t{
+#t {
   width: 35%;
 }
 
-p, .link{
+p,
+.link {
   font-size: x-large;
+}
+
+.content {
+  padding: 30px;
+  margin-top: 25px;
+  background-color: #1e1e1e;
+  border-radius: 20px;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar {
+  background: rgb(136, 48, 78);
+  background: linear-gradient(90deg, rgba(136, 48, 78, 1) 0%, rgba(82, 37, 70, 1) 100%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.footer {
+  background: rgb(136, 48, 78);
+  background: linear-gradient(90deg, rgba(136, 48, 78, 1) 0%, rgba(82, 37, 70, 1) 100%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 
@@ -54,25 +85,31 @@ p, .link{
       }
     }*/
 
-@media only screen 
-    and (max-width: 576px)    {
-    #dateGreet{
+@media only screen and (max-width: 576px) {
+  #dateGreet {
     width: 100%;
   }
-  #pfp{
+
+  #pfp {
     zoom: 0.03;
     display: none;
   }
-  #githubLink{
+
+  #githubLink {
     width: 50%;
   }
 
-  #t{
+  #t {
     width: 100%;
   }
-  
-  #video{
-    width: 100%;
-  }
-    }
 
+  #video {
+    width: 100%;
+  }
+
+  .content {
+    margin-top: 20px;
+    width: 95%;
+  }
+
+}
