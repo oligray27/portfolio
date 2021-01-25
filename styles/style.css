@@ -13,12 +13,6 @@ body {
   border: 1px solid;
 }
 
-.btn-decrement, .btn-increment{
-  background-color: #e23e57;
-  color: #f8f9fa;
-  border-color: #ced4da;
-}
-
 #dateGreet {
   width: 75%;
 }
@@ -58,42 +52,12 @@ p,
   border-bottom-right-radius: 20px;
 }
 
-.picker{
-  width: 250px;
-}
-
 .footer {
   background: rgb(136, 48, 78);
   background: linear-gradient(90deg, rgba(136, 48, 78, 1) 0%, rgba(82, 37, 70, 1) 100%);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-
-
-/* 2688x1242px at 458ppi */
-/*@media only screen 
-    and (device-width: 414px) 
-    and (device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 3) { 
-      #dateGreet{
-        width: 100%;
-      }
-      #pfp{
-        zoom: 0.03;
-        display: none;
-      }
-      #githubLink{
-        width: 50%;
-      }
-    
-      #t{
-        width: 100%;
-      }
-      
-      #video{
-        width: 100%;
-      }
-    }*/
 
 @media only screen and (max-width: 576px) {
   #dateGreet {
@@ -125,5 +89,4 @@ p,
   #label{
     padding-bottom: 1rem;
   }
-
 }
