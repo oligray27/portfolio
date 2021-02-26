@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- custom javascript -->
+    <script src="scripts/script.js" type="text/javascript"></script>
+
+    <!-- font styling -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesome icons script -->
+    <script src="https://kit.fontawesome.com/259b42d785.js" crossorigin="anonymous"></script>
+
+    <title>RoboReplace</title>
+</head>
+
+<body style="background-color: #183153;">
+
+    <!-- top navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+        <i id="nav-logo" class="d-inline fas fa-robot fa-lg" style="margin-right: 10px; width: 30; height: 30;"></i>
+        <a class="navbar-brand" href="#"><strong>RoboReplace</strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <button id="login-btn" class="btn text-light my-2 my-sm-0" type="submit">Login</button>
+            </form>
+    
+        </div>
+        
+    </nav>
+
+    <div class="d-flex content">
+        <div class="container" id="hero" style="margin-top: 80px;">
+            <div class="row align-items-center">
+                <div class="col-md">
+                    <h2 style="font-weight: 600;">Contact</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span>Want to know about how RoboReplace operates? The options below allow you to contact us with any
+                        questions.</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto">
+                    <p style="display: inline;">Email -&nbsp;</p>
+                    <a class="link" href="mailto:questions@roboreplace.com"><span
+                            data-content="kloat64@icloud.com">questions@roboreplace.com</span></a>
+                </div>
+                <div style="margin-bottom: .5rem;" class="col-md">
+                    <p style="display: inline;">Mobile Number -&nbsp;</p>
+                    <a class="link" href="tel:020 7219 3000"><span data-content="020 7219 3000">020 7219
+                            3000</span></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4 style="font-weight: 600; margin-bottom: 16px;">Book an appointment</h4>
+                </div>
+            </div>
+
+            <form class="needs-validation" name="form1" novalidate>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name="fname" placeholder="First Name" pattern="[A-Za-z]+" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Only letters allowed in this field.</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name="lname" placeholder="Surname" pattern="[A-Za-z]+" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Only letters allowed in this field.</div>
+                    </div>
+                </div>
+                <hr style="margin-top: 0px">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Not an email address.</div>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <input id="tel" type="text" class="form-control" name="tel" placeholder="Mobile Number (07400 123456)"
+                            aria-label="Tel" pattern="[0-9]{11}" aria-describedby="tel-addon" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Incorrect format.</div>
+                    </div>
+                </div>
+                <hr style="margin-top: 0px">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name="uname"
+                            placeholder="Enter username (min 3, max 10)" required pattern="{3,10}">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Invalid.</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" name="password" placeholder="Password" id="password" required
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$">
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Password does not meet criteria.</div>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="password" class="form-control" placeholder="Confirm Password" id="confirm_password"
+                            required>
+                        <div class="valid-feedback">Password matches.</div>
+                        <div class="invalid-feedback">Password do not match.</div>
+                    </div>
+                </div>
+
+                <hr style="margin-top: 0px">
+                <button type="submit" name="submit" value="Submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div style="width: 400px; ">
+            <div class="row align-items-center">
+                <div class="col-md">
+                    <h5 style="margin-bottom: 0;">Follow us on Social Media</h5>
+                </div>
+                <div class="col-">
+                    <i class="fab fa-facebook-f fa-lg" onclick="window.open(
+                            'https://facebook.com', '_blank');"></i>
+                </div>
+                <div class="col-">
+                    <i class="fab fa-instagram fa-lg" onclick="window.open(
+                            'https://instagram.com', '_blank');"></i>
+                </div>
+                <div class="col-">
+                    <i class="fab fa-twitter fa-lg" onclick="window.open(
+                            'https://twitter.com', '_blank');"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-auto">
+                    <a  id="disclaimer"  href="index.html">Home</a>                
+                </div>
+                <div class="col-auto">
+                    <a  id="disclaimer" href="about.html">About</a>                
+                </div>
+                <div class="col">
+                    <a class="active-link" href="#">Contact</a>                
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-auto">
+                    <span class="text-muted">Copyright © 2021 RoboReplace</span> <br>
+                </div>
+                <div class="col-">
+                    <a id="disclaimer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Disclaimer
+                    </a>
+                    <div class="dropdown-menu">
+                        <span style="font-size: 0.7rem; margin-bottom: 0px;">RoboReplace is a
+                            fictitious brand created
+                            solely for the purpose of the assessment
+                            of IN1010 at City, University of London, UK. All products and people associated with
+                            RoboReplace are
+                            also fictitious. Any resemblance to real brands, products, or people is purely coincidental.
+                            Information
+                            provided about the product is also fictitious and should not be constructed to be
+                            representative of
+                            actual products on the market in a similar product category. </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
+    <script>
+        var password = document.getElementById("password")
+            , confirm_password = document.getElementById("confirm_password");
+
+        function validatePassword() {
+            if (password.value != confirm_password.value) {
+                confirm_password.setCustomValidity("Passwords Don't Match");
+            } else {
+                confirm_password.setCustomValidity('');
+            }
+        }
+
+        password.onchange = validatePassword;
+        confirm_password.onkeyup = validatePassword;
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>

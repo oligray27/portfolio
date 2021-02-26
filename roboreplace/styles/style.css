@@ -63,6 +63,7 @@ html{
   background-color: #e9ecef;
   border-radius: 20px;
 }
+
 .text-muted{
   font-size: 0.7rem;
 }
@@ -83,7 +84,6 @@ html{
   min-height: calc(100vh - 102px);
   
 }
-
 
 .footer {
   padding: .7rem 1rem;
