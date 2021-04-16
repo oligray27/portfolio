@@ -1,0 +1,26 @@
+@media (min-width: 300px) {
+  span {
+    line-height: 0.5;
+    font-size: 12px;
+  }
+}
+
+span {
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.col.item-txt {
+  margin-top: 5px;
+}
+
+.item-div {
+  background-image: url(../../assets/img/item-bg.png);
+  border-radius: 20px;
+  border: 2px solid #707070;
+}
+
+.item {
+  padding-bottom: 20px;
+}
+
