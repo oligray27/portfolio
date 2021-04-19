@@ -1,0 +1,8 @@
+<svg id="Group_23" data-name="Group 23" xmlns="http://www.w3.org/2000/svg" width="62.049" height="62.05" viewBox="0 0 62.049 62.05">
+  <g id="wireless_charging" data-name="wireless charging">
+    <g id="Group_15" data-name="Group 15">
+      <path id="Path_22" data-name="Path 22" d="M264.123,97.2a31.025,31.025,0,1,0,31.025,31.025A31.024,31.024,0,0,0,264.123,97.2m0,60.188a29.164,29.164,0,1,1,29.164-29.164,29.2,29.2,0,0,1-29.164,29.164" transform="translate(-233.098 -97.204)" fill="#003a87"/>
+    </g>
+  </g>
+  <path id="Path_24" data-name="Path 24" d="M10.128,15.257V9.128a6.128,6.128,0,1,1,12.257,0M16.257,21.385v3.064M7.064,30.578H25.449a3.064,3.064,0,0,0,3.064-3.064V18.321a3.064,3.064,0,0,0-3.064-3.064H7.064A3.064,3.064,0,0,0,4,18.321v9.193a3.064,3.064,0,0,0,3.064,3.064Z" transform="translate(14.958 14.238)" fill="none" stroke="#003a87" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+</svg>

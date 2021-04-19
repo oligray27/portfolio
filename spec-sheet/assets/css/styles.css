@@ -1,88 +1,17 @@
-.item-div {
-  background-image: url(../../assets/img/item-bg.png);
-  border-radius: 20px;
-  border: 2px solid #707070;
+.cam-sm {
+  font-size: 9px;
 }
 
-.item {
-  padding-bottom: 20px;
+.accordian-link:hover {
+  text-decoration: none;
 }
 
-.item-text {
-  font-size: 20px;
-  color: #00539F;
-  font-weight: bold;
-  font-family: helvetica;
+.card-header {
+  background-color: #004997;
 }
 
-.item-icon {
-  font-size: 15px;
-  color: #00539f;
-}
-
-.col-6, .col-12 {
-  padding-bottom: 20px;
-}
-
-.fas.fa-signal.item-icon {
-  padding-top: 4px;
-}
-
-.item-icon {
-  padding-right: 7px;
-  font-size: 21px;
-}
-
-#det-container {
-  padding-top: 15px;
-  /*padding-left: 29px;*/
-  padding-right: -15px;
-  /*justify-content: center;*/
-}
-
-#det-1 {
-  padding-left: 28px;
-}
-
-@media (max-width: 360px) {
-  #det-1 {
-    padding-left: 22px;
-  }
-}
-
-@media (max-width: 360px) {
-  .col-6.wireless-charging span {
-    font-size: 19px;
-  }
-}
-
-.col-6.wireless-charging {
-  padding-left: 32px;
-}
-
-@media (max-width: 360px) {
-  .col-6.wireless-charging {
-    padding-left: 26px;
-  }
-}
-
-.cam-sm span {
-  font-size: 18px;
-  padding-bottom: 3px;
-  padding-top: 4px;
-}
-
-@media (max-width: 360px) {
-  .cam-sm span {
-    font-size: 18px;
-    padding-bottom: 7px;
-    padding-top: 6px;
-  }
-}
-
-@media (max-width: 360px) {
-  .cam-sm span {
-    font-size: 16px;
-  }
+.accordian-link {
+  color: black;
+  font-size: 26px;
 }
 
